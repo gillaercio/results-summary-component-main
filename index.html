@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,28 +16,60 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <main id="content">
+    <section class="result-content">
+      <h2 class="result-title">Your Result</h2>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div>
+        <span>76</span>
+        <span>of 100</span>
+      </div>
 
-  Reaction
-  80 / 100
+      <h1>Great</h1>
 
-  Memory
-  92 / 100
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    
+    <section class="summary-content">
+      <h2 class="summary-title">Summary</h2>
 
-  Verbal
-  61 / 100
+      <div class="totals">
+        <div class="total">
+          <div class="total-reaction">
+            <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
+            Reaction
+          </div>
+          <div class="total-percent">80 <span>/ 100</span></div>
+        </div>
 
-  Visual
-  72 / 100
+        <div class="total">
+          <div class="total-memory">
+            <img src="assets/images/icon-memory.svg" alt="icon-memory">
+            Memory
+          </div>
+          <div class="total-percent">92 <span>/ 100</span></div>
+        </div>
 
-  Continue
+        <div class="total">
+          <div class="total-verbal">
+            <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
+            Verbal
+          </div>
+          <div class="total-percent">61 <span>/ 100</span></div>
+        </div>
+
+        <div class="total">
+          <div class="total-visual">
+            <img src="assets/images/icon-visual.svg" alt="icon-visual">
+            Visual
+          </div>
+          <div class="total-percent">72 <span>/ 100</span></div>
+        </div>
+      </div>
+
+      <a class="summary-btn" href="#">Continue</a>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
