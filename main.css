@@ -1,0 +1,24 @@
+h1 {
+  font: var(--text-result);
+}
+
+h2 {
+  font: var(--text-title);
+}
+
+.result-feature span:nth-child(1){
+  font: var(--text-ft);
+}
+
+p {
+  font: var(--text-parag)
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
