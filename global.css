@@ -25,8 +25,10 @@ html {
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
 
-  --hanken: "Hanken Grotesk, serif";
-  --text-result: 800 2em/150% var(--arial);
-  --text-title: 700 1.8em/ 150% var(--hanken);
-  --text-parag: 500 1.8em/150% var(--hanken);
+  --hanken: "Hanken Grotesk", serif;
+  --text-ft: 700 5em/150% var(--hanken);
+  --text-result: 700 2em/150% var(--hanken);
+  --text-title: 600 1.8em/ 150% var(--hanken);
+  --text-parag: 400 1.8em/150% var(--hanken);
+  --text: 400 1.5em/150% var(--hanken);
 }

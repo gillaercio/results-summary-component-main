@@ -1,8 +1,30 @@
+body {
+  background-color: var(--pale-blue);
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  width: 300px;
+  display: grid;
+  background-color: white;
+  grid-gap: 20px;
+}
+
+.result-content {
+  justify-items: center;
+  background-color: var(--cobalt-blue);
+  color: var(--white);
+}
+
 h1 {
   font: var(--text-result);
 }
 
-h2 {
+h2,
+.summary-btn {
   font: var(--text-title);
 }
 
@@ -10,8 +32,16 @@ h2 {
   font: var(--text-ft);
 }
 
+.result-feature span:nth-child(2){
+  font: var(--text-parag);
+}
+
 p {
   font: var(--text-parag)
+}
+
+.total {
+  font: var(--text);
 }
 
 .attribution {
