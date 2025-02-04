@@ -10,7 +10,6 @@ body {
   width: 300px;
   display: grid;
   background-color: white;
-  grid-gap: 20px;
 }
 
 .result-content {
@@ -68,8 +67,61 @@ p {
   opacity: .5;
 }
 
-.total {
+.summary-content {
+  display: grid;
+  padding: 30px;
+  grid-gap: 15px;
+  border: 1px solid red;
+}
+
+.summaries {
+  display: grid;
+  grid-gap: 10px;
+  /* font: var(--text-sm); */
+  border: 1px solid blue;
+}
+
+.totals {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
   font: var(--text-sm);
+  border: 1px solid yellow;
+}
+
+.reaction {
+  background-color: var(--light-red);
+}
+
+.memory {
+  background-color: var(--orangey-yellow);
+}
+
+.verbal {
+  background-color: var(--green-teal);
+}
+
+.visual {
+  background-color: var(--cobalt-blue);
+}
+
+.total {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  border: 1px solid green;
+}
+
+.summary-btn {
+  background-color: var(--dark-gray-blue);
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 .attribution {
