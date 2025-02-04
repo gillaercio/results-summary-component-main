@@ -7,7 +7,7 @@ body {
 }
 
 #content {
-  width: 300px;
+  max-width: 320px;
   display: grid;
   background-color: white;
 }
@@ -70,15 +70,14 @@ p {
 .summary-content {
   display: grid;
   padding: 30px;
-  grid-gap: 15px;
-  border: 1px solid red;
+  grid-gap: 20px;
+  /* border: 1px solid red; */
 }
 
 .summaries {
   display: grid;
   grid-gap: 10px;
-  /* font: var(--text-sm); */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .totals {
@@ -89,30 +88,51 @@ p {
   padding: 10px;
   border-radius: 10px;
   font: var(--text-sm);
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .reaction {
-  background-color: var(--light-red);
+  background-color: var(--light-red-transparent);
 }
 
 .memory {
-  background-color: var(--orangey-yellow);
+  background-color: var(--orangey-yellow-transparent);
 }
 
 .verbal {
-  background-color: var(--green-teal);
+  background-color: var(--green-teal-transparent);
 }
 
 .visual {
-  background-color: var(--cobalt-blue);
+  background-color: var(--cobalt-blue-transparent);
 }
 
 .total {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: 10px;
-  border: 1px solid green;
+  font-weight: 700;
+  /* border: 1px solid green; */
+}
+
+.total-reaction {
+  color: var(--light-red);
+}
+
+.total-memory {
+  color: var(--orangey-yellow);
+}
+
+.total-verbal {
+  color: var(--green-teal);
+}
+
+.total-visual {
+  color: var(--cobalt-blue);
+}
+
+.total-percent span {
+  opacity: .5;
 }
 
 .summary-btn {
@@ -120,8 +140,13 @@ p {
   border-radius: 30px;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: var(--white);
   text-decoration: none;
+  cursor: pointer;
+}
+
+.summary-btn:hover {
+  background-color: var(--light-royal-blue-background);
 }
 
 .attribution {

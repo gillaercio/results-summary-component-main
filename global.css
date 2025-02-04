@@ -10,9 +10,13 @@ html {
 
 :root {
   --light-red: hsl(0, 100%, 67%);
+  --light-red-transparent: hsl(0, 100%, 67%, 10%);
   --orangey-yellow: hsl(39, 100%, 56%);
+  --orangey-yellow-transparent: hsl(39, 100%, 56%, 10%);
   --green-teal: hsl(166, 100%, 37%);
+  --green-teal-transparent: hsl(166, 100%, 37%, 10%);
   --cobalt-blue: hsl(234, 85%, 45%);
+  --cobalt-blue-transparent: hsl(234, 85%, 45%, 10%);
 
   --light-slate-blue-background: hsl(252, 100%, 67%);
   --light-royal-blue-background: hsl(241, 81%, 54%);
