@@ -92,19 +92,19 @@ p {
   font: var(--text-sm);
 }
 
-.reaction {
+.Reaction {
   background-color: var(--light-red-transparent);
 }
 
-.memory {
+.Memory {
   background-color: var(--orangey-yellow-transparent);
 }
 
-.verbal {
+.Verbal {
   background-color: var(--green-teal-transparent);
 }
 
-.visual {
+.Visual {
   background-color: var(--cobalt-blue-transparent);
 }
 
@@ -119,23 +119,23 @@ p {
   align-self: center;
 }
 
-.total-reaction {
+.totalReaction {
   color: var(--light-red);
 }
 
-.total-memory {
+.totalMemory {
   color: var(--orangey-yellow);
 }
 
-.total-verbal {
+.totalVerbal {
   color: var(--green-teal);
 }
 
-.total-visual {
+.totalVisual {
   color: var(--cobalt-blue);
 }
 
-.total-percent span {
+.totalPercent span:nth-child(2) {
   opacity: .5;
 }
 

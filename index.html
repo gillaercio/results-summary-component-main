@@ -34,37 +34,42 @@
       <h2 class="summary-title">Summary</h2>
 
       <div class="summaries">
-        <div class="totals reaction">
-          <div class="total total-reaction">
+        <!--<div class="totals Reaction">
+          <div class="total totalReaction">
             <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
             <span>Reaction</span>
           </div>
-          <div class="total-percent">80 <span>/ 100</span></div>
-        </div>
+          <div class="totalPercent">
+            <span>80</span> <span>/ 100</span>
+          </div>
+        </div>-->
 
-        <div class="totals memory">
-          <div class="total total-memory">
+        <!--<div class="totals Memory">
+          <div class="total totalMemory">
             <img src="assets/images/icon-memory.svg" alt="icon-memory">
             <span>Memory</span>
           </div>
-          <div class="total-percent">92 <span>/ 100</span></div>
-        </div>
+          <div class="totalPercent">
+            <span>92</span> <span>/ 100</span></div>
+        </div>-->
 
-        <div class="totals verbal">
-          <div class="total total-verbal">
+        <!--<div class="totals Verbal">
+          <div class="total totalVerbal">
             <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
             <span>Verbal</span>
           </div>
-          <div class="total-percent">61 <span>/ 100</span></div>
-        </div>
+          <div class="totalPercent">
+            <span>61</span> <span>/ 100</span></div>
+        </div>-->
 
-        <div class="totals visual">
-          <div class="total total-visual">
+        <!--<div class="totals Visual">
+          <div class="total totalVisual">
             <img src="assets/images/icon-visual.svg" alt="icon-visual">
             <span>Visual</span>
           </div>
-          <div class="total-percent">72 <span>/ 100</span></div>
-        </div>
+          <div class="totalPercent">
+            <span>72</span> <span>/ 100</span></div>
+        </div>-->
       </div>
 
       <a class="summary-btn" href="#">Continue</a>
@@ -75,5 +80,53 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/gillaercio/results-summary-component-main">Gildman Laécio</a>.
   </footer>
+  <script>
+    function load() {
+      fetch('data.json')
+        .then(response => response.json())
+        .then(dados => {
+          const container = document.querySelector(".summaries")
+          
+          dados.map(dado => {
+            const totals = document.createElement("div")
+            totals.classList.add("totals")
+            totals.classList.add(dado.category)
+
+            const total = document.createElement("div")
+            total.classList.add("total")
+            total.classList.add(`total${dado.category}`)
+
+            const img = document.createElement("img")
+            img.src = dado.icon
+            img.alt = `icon-${dado.category}`
+            const name = document.createElement("span")
+            name.textContent = dado.category
+            
+            
+            const percent = document.createElement("div")
+            percent.classList.add("totalPercent")
+            const textSpan = document.createElement("span")
+            textSpan.textContent = '/ 100'
+
+            const span = document.createElement("span")
+            span.textContent = dado.score
+
+            total.appendChild(img)
+            total.appendChild(name)
+            total.appendChild(percent)
+            percent.appendChild(span)
+            percent.appendChild(textSpan)
+
+            totals.appendChild(total)
+            totals.appendChild(percent)
+
+            container.appendChild(totals)
+
+          })
+        })
+      }
+
+    load()
+  </script>
 </body>
 </html>
