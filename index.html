@@ -34,42 +34,7 @@
       <h2 class="summary-title">Summary</h2>
 
       <div class="summaries">
-        <!--<div class="totals Reaction">
-          <div class="total totalReaction">
-            <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
-            <span>Reaction</span>
-          </div>
-          <div class="totalPercent">
-            <span>80</span> <span>/ 100</span>
-          </div>
-        </div>-->
 
-        <!--<div class="totals Memory">
-          <div class="total totalMemory">
-            <img src="assets/images/icon-memory.svg" alt="icon-memory">
-            <span>Memory</span>
-          </div>
-          <div class="totalPercent">
-            <span>92</span> <span>/ 100</span></div>
-        </div>-->
-
-        <!--<div class="totals Verbal">
-          <div class="total totalVerbal">
-            <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
-            <span>Verbal</span>
-          </div>
-          <div class="totalPercent">
-            <span>61</span> <span>/ 100</span></div>
-        </div>-->
-
-        <!--<div class="totals Visual">
-          <div class="total totalVisual">
-            <img src="assets/images/icon-visual.svg" alt="icon-visual">
-            <span>Visual</span>
-          </div>
-          <div class="totalPercent">
-            <span>72</span> <span>/ 100</span></div>
-        </div>-->
       </div>
 
       <a class="summary-btn" href="#">Continue</a>
@@ -102,19 +67,17 @@
             const name = document.createElement("span")
             name.textContent = dado.category
             
-            
             const percent = document.createElement("div")
             percent.classList.add("totalPercent")
+            const dataSpan = document.createElement("span")
+            dataSpan.textContent = dado.score
             const textSpan = document.createElement("span")
             textSpan.textContent = '/ 100'
-
-            const span = document.createElement("span")
-            span.textContent = dado.score
 
             total.appendChild(img)
             total.appendChild(name)
             total.appendChild(percent)
-            percent.appendChild(span)
+            percent.appendChild(dataSpan)
             percent.appendChild(textSpan)
 
             totals.appendChild(total)
