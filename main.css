@@ -136,7 +136,8 @@ p {
 }
 
 .totalPercent {
-  margin-right: 10px;
+  width: 70px;
+  text-align: end;
 }
 
 .totalPercent span:nth-child(2) {
