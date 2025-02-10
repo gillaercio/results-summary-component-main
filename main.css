@@ -37,6 +37,8 @@ h2,
 }
 
 .result-title {
+  width: 100px;
+  text-align: center;
   opacity: .5;
 }
 
@@ -204,6 +206,10 @@ p {
     align-content: center;
   }
 
+  .result-title {
+    width: 150px;
+  }
+
   .result-feature {
     width: 140px;
     height: 140px;
@@ -220,6 +226,7 @@ p {
   }
 
   .totalPercent {
+    width: 120px;
     font-weight: 700;
   }
 }
@@ -233,6 +240,10 @@ p {
   .result-content,
   .summary-content {
     padding: 40px;
+  }
+
+  .result-title {
+    width: 200px;
   }
 
   .result-feature {
