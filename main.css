@@ -135,6 +135,10 @@ p {
   color: var(--cobalt-blue);
 }
 
+.totalPercent {
+  margin-right: 10px;
+}
+
 .totalPercent span:nth-child(2) {
   opacity: .5;
 }
@@ -183,6 +187,10 @@ p {
     grid-template-columns: repeat(2, minmax(256px, 512px));
   }
 
+  h1 {
+    font-size: 2.5em;
+  }
+
   h2 {
     font-size: 2em;
   }
@@ -205,8 +213,13 @@ p {
     grid-gap: 10px;
   }
 
+  .totals,
   .attribution {
     font-size: 1.5em;
+  }
+
+  .totalPercent {
+    font-weight: 700;
   }
 }
 
@@ -235,7 +248,7 @@ p {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   h2,
